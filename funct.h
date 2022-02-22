@@ -68,7 +68,7 @@ static void get_choice()
             bool flag = true;
             while (flag == true)
             {
-                  std::cout << "Enter your choice: \n";
+                  std::cout << "\nEnter your choice: \n";
                   std::cin >> choice;
                   std::cout << "Enter your quantity: \n";
                   std::cin >> quantity;
@@ -80,5 +80,5 @@ static void get_choice()
                         std::cout<<"\nThank You for your order.\n";
                   }
             }
-            }
+      }
 #endif
