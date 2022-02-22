@@ -8,45 +8,39 @@ std::fstream menu;
 std::fstream order_details;
 static void write_menu()
       {
-            menu.open("menu.txt",std::ios::out | std::ios::trunc);
-            menu << "1.Idli"
-                      << "\n\t2.Plain Dosa"
-                      << "\n3.Masala Dosa"
-                      << "\n4.Uttapam"
-                      << "\n5.Samosa"
-                      << "\n6.BreadPakoda"
-                      << "\n7.Pani Puri"
-                      << "\n8.Pav Bhaji"
-                      << "\n9.Chilli Paneer"
-                      << "\n10.Chola Puri"
-                      << "\n11.Sambar Vada"
-                      << "\n12.Rava"
-                      << "\n13.Bread"
-                      << "\n14.Pizza"
-                      << "\n15.Burger"
-                      << "\n16.Sandwich"
-                      << "\n17.Pasta"
-                      << "\n18.Noodles"
-                      << "\n19.Pulav"
-                      << "\n20.Soup"
-                      << "\n\t21.Pastery"
-                      << "\n22.Cake"
-                      << "\n\t23.Ice Cream"
-                      << "\n24.Coffee"
-                      << "\n25.Tea"
-                      << "\n\t26.Juice"
-                      << "\n27.Milk"
-                      << "\n28.Curd"
-                      << "\n\t29.Butter"
-                      << "\n30.Cheese";
+            menu.open("menu.txt",std::ofstream::out | std::ofstream::trunc);
+            menu      << "ITEM'S"          << "\t\tPRICE"
+                      << "\n1.Idli" << "\t         20"
+                      << "\n2.Plain Dosa" << "\t 30"
+                      << "\n3.Masala Dosa" << "\t 50"
+                      << "\n4.Uttapam" << "\t 40"
+                      << "\n5.Samosa" << "\t 20"
+                      << "\n6.BreadPakoda" << "\t 30"
+                      << "\n7.Pani Puri" << "\t 20"
+                      << "\n8.Pav Bhaji" << "\t 30"
+                      << "\n10.Chola Puri" << "\t 30"
+                      << "\n11.Sambar Vada" << "\t 20"
+                      << "\n12.Pizza" << "\t 50"
+                      << "\n13.Burger" << "\t 30"
+                      << "\n14.Sandwich" << "\t 40"
+                      << "\n15.Pasta" << "\t 50"
+                      << "\n16.Noodles" << "\t 40"
+                      << "\n17.Pulav" << "\t 50"
+                      << "\n18.Soup" << "\t         20"
+                      << "\n19.Ice Cream" << "\t 50"
+                      << "\n20.Coffee" << "\t 20"
+                      << "\n21.Tea" << "\t         10"
+                      << "\n22.Milk" << "\t         20"
+                      << "\n23.Curd" << "\t         20"
+                      << "\n24.Cheese" << "\t 20";
 
             menu.close();
       }
 static void show_menu()
       {
-            menu.open("menu.txt",std::ios::in);
+            menu.open("menu.txt",std::ifstream::in);
             std::string line;
-            while(true)
+            /*while(true)
             {
                   int i = 0;
                   while(i != 3)
@@ -60,6 +54,10 @@ static void show_menu()
                   {
                         break;
                   }
+            }*/
+            while(getline(menu,line))
+            {
+                  std::cout << line << std::endl;
             }
             menu.close();
       }
