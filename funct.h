@@ -2,9 +2,13 @@
 #define FUNCT_H
 #include <iostream>
 #include <string>
+#include <fstream>
 
+std::fstream menu;
+std::fstream order_details;
 static void show_menu()
       {
+            
             std::cout << "\n1.Idli"
                       << "\t\t2.Plain Dosa"
                       << "\t3.Masala Dosa"
