@@ -56,7 +56,5 @@ static void get_choice()
                         std::cout<<"\nThank You for your order.\n";
                   }
             }
-            std::cout << "We are cooking for you" <<
-                          "\nYour order will be ready in 15 minutes.\n";
-      }
+            }
 #endif
