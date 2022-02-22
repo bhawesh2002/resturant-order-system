@@ -1,30 +1,24 @@
-1.Idli
-	2.Plain Dosa
-3.Masala Dosa
-4.Uttapam
-5.Samosa
-6.BreadPakoda
-7.Pani Puri
-8.Pav Bhaji
-9.Chilli Paneer
-10.Chola Puri
-11.Sambar Vada
-12.Rava
-13.Bread
-14.Pizza
-15.Burger
-16.Sandwich
-17.Pasta
-18.Noodles
-19.Pulav
-20.Soup
-	21.Pastery
-22.Cake
-	23.Ice Cream
-24.Coffee
-25.Tea
-	26.Juice
-27.Milk
-28.Curd
-	29.Butter
-30.Cheese
+ITEM'S		PRICE
+1.Idli	         20
+2.Plain Dosa	 30
+3.Masala Dosa	 50
+4.Uttapam	 40
+5.Samosa	 20
+6.BreadPakoda	 30
+7.Pani Puri	 20
+8.Pav Bhaji	 30
+10.Chola Puri	 30
+11.Sambar Vada	 20
+12.Pizza	 50
+13.Burger	 30
+14.Sandwich	 40
+15.Pasta	 50
+16.Noodles	 40
+17.Pulav	 50
+18.Soup	         20
+19.Ice Cream	 50
+20.Coffee	 20
+21.Tea	         10
+22.Milk	         20
+23.Curd	         20
+24.Cheese	 20
