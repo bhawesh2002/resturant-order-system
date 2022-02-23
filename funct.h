@@ -9,8 +9,7 @@ std::fstream order_details;
 static void write_menu()
       {
             menu.open("menu.txt",std::ofstream::out | std::ofstream::trunc);
-            menu      << "ITEM'S"          << "\t\tPRICE"
-                      << "\n1.Idli" << "\t         20"
+            menu      << "\n1.Idli" << "\t         20"
                       << "\n2.Plain Dosa" << "\t 30"
                       << "\n3.Masala Dosa" << "\t 50"
                       << "\n4.Uttapam" << "\t 40"
