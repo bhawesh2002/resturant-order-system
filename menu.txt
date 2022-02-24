@@ -1,4 +1,4 @@
-ITEM'S		PRICE
+
 1.Idli	         20
 2.Plain Dosa	 30
 3.Masala Dosa	 50
