@@ -9,7 +9,7 @@ std::fstream order_details;
 static void write_menu()
       {
             menu.open("menu.txt",std::ofstream::out | std::ofstream::trunc);
-            menu      << "1.Idli" << "\t         20"
+            menu      << "\n1.Idli" << "\t         20"
                       << "\n2.Plain Dosa" << "\t 30"
                       << "\n3.Masala Dosa" << "\t 50"
                       << "\n4.Uttapam" << "\t 40"
@@ -64,8 +64,9 @@ static void get_choice()
       {
             int choice;
             int quantity;
-            int no_of_lines;
+            int no_of_lines = 0;
             std::string line;
+            menu.open("menu.txt",std::ifstream::in);
             if (menu.is_open())
             {
                   while (!menu.eof())
@@ -75,7 +76,6 @@ static void get_choice()
                   }
                          
             }
-            std::cout << no_of_lines << std::endl;
             /*bool flag = true;
             while (flag == true)
             {
